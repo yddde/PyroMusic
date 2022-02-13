@@ -92,7 +92,7 @@ async def help(client, m: Message):
     await m.reply(HEPZ, disable_web_page_preview=True)
 
 
-@Client.on_message(filters.command(["السورس","سورس","المالك","المطور"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["سورس", "المطور", "السورس"], prefixes=f""))
 async def repo(client, m: Message):
     await m.delete()
     REPZ = f"""
